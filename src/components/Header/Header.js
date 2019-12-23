@@ -16,6 +16,10 @@ export class Header extends Component {
                         <li>
                             <a href="#event">Event</a>
                         </li>
+
+                        <li>
+                            <a href="#booking">Booking</a>
+                        </li>
                        
                         <li>
                             <a href="#mixtape">Mixtape</a>
@@ -25,9 +29,7 @@ export class Header extends Component {
                             <a href="#gallery">Gallery</a>
                         </li>
 
-                        <li>
-                            <a href="#booking">Booking</a>
-                        </li>
+                       
                     </ul>
                 </div>
                 {this.props.children}

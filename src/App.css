@@ -18,12 +18,12 @@
 }
 
 #booking {
-    margin-top: -40%;
+    margin-top: 90%;
     height: 100vh;
 }
 
 #mixtape {
-  margin-top: 80%;
+  margin-top: 5%;
     height: 100vh;
 }
 
@@ -111,7 +111,7 @@ article {
     background-color: #fff;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 5;
 }
 
 .nav ul {
@@ -212,8 +212,9 @@ article {
       margin-top: 0;
     }
 
+
     #mixtape {
-        margin-top: 5%;
+        margin-top: 0;
         height: 100vh;
     }
 
@@ -369,5 +370,6 @@ article {
 
     .img-slider {
         width: 100%;
+        height: 500px;
     }
 }
