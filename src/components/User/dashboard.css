@@ -1,0 +1,18 @@
+.dashboard {
+    background: #f7f7fb;
+    height: 100vh;
+}
+
+.dash-card {
+    background: linear-gradient(
+        125.22deg,
+        #ffffff 61.76%,
+        #fbfbfd 62.5%,
+        #f9f9fc 63%,
+        #f7f7fb 63.64%
+    );
+    width: auto;
+
+    border-radius: 5px;
+}
+
