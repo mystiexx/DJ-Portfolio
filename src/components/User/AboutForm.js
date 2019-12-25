@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import { Container, Card, Form, Row, Col } from "react-bootstrap";
+import Modal from 'react-modal'
 
 export class AboutForm extends Component {
     render() {
+        const {open, close } = this.props
         return (
-            <div className="dashboard">
-                <Container fluid className="p-5">
-                    <div style={{marginTop: 60}}>
-                    <Row>
-                        <Col></Col>
-                        <Col>
-                            <Card className="shadow-sm" border="light">
-                                <Card.Body>
+            <div>
+                    
+                            <Modal isOpen={open} onRequestClose={close}>
+                              
                                     <h4 className="text-center mb-3">About Me</h4>
                                     <Form>
                                         <Form.Group>
@@ -22,13 +20,8 @@ export class AboutForm extends Component {
                                             <button className="book">Post</button>
                                         </div>
                                     </Form>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col></Col>
-                    </Row>
-                    </div>
-                </Container>
+                               
+                            </Modal>
             </div>
         );
     }

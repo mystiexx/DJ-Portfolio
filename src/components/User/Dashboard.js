@@ -2,8 +2,25 @@ import React, { Component } from "react";
 import "./dashboard.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import EventForm from "./EventForm";
+import AboutForm from "./AboutForm";
+import MixtapeForm from "./MixtapeForm";
 
 export class Dashboard extends Component {
+    constructor(){
+        super()
+        this.state = {
+            modalIsOpen: false
+        }
+    }
+
+    handleOpen = () => {
+        this.setState({ modalIsOpen: true})
+    }
+
+    handleClose =()=> {
+        this.setState({ modalIsOpen: false})
+    }
     render() {
         return (
             <div className="dashboard">
@@ -13,7 +30,7 @@ export class Dashboard extends Component {
                         <Col>
                             <Card className="dash-card shadow-sm" border="light">
                                 <Card.Body>
-                                    <a href="/add/about">About Me</a>
+                                    <div onClick={this.handleOpen}>About Me</div>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -45,6 +62,7 @@ export class Dashboard extends Component {
                         <Col></Col>
                     </Row>
                     </div>
+                    <AboutForm open={this.state.modalIsOpen} close={this.handleClose}/>
                 </Container>
             </div>
         );
