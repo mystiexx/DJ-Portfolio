@@ -12,10 +12,9 @@ export class AdminHeader extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
                             <Nav.Link href="/">DashBoard</Nav.Link>
-                            <Nav.Link href="#about">About</Nav.Link>
-                            <Nav.Link href="#event">Event</Nav.Link>
-                            <Nav.Link href="#booking">Booking</Nav.Link>
-                            <Nav.Link href="#mixtape">Mixtape</Nav.Link>
+                            <Nav.Link href="/about">About</Nav.Link>
+                            <Nav.Link href="/event">Event</Nav.Link>
+                            <Nav.Link href="/mixtape">Mixtape</Nav.Link>
                             <Nav.Link href="#gallery">Gallery</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
