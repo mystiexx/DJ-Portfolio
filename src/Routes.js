@@ -13,7 +13,7 @@ import MixtapePage from "./components/User/MixtapePage";
 
 class Routes extends Component {
     render() {
-        const loggedIn = true;
+        const loggedIn = false;
         return (
             <Router>
                 <div>
